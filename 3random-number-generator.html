@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <!--link to bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>The Random Password Generator</title>
 </head>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <div class="wrapper">
+            
+    <div>
       <header>
+          <!--jumbotron for the top container dispaying header that is emboldened-->
+      <div class="jumbotron jumbotron-fluid"; class = "wrapper">
+            <header>
           <!--using style attribute to embolden the header-->
-        <h1 style="font-size:60px;">The Random Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2 style="font-size:10px;">Generate a Password</h2>
-        </div>
-       
+        <h1 class="bright-header" style="font-size:60px";>The Random Password Generator</h1>
+            </header>
+            <div class="card">
+                    <div class="card-header">
+                      <h2>Generate a Password</h2>
+                    </div>
+                    <div class="card-body">
+                      <textarea
+                        readonly
+                        id="password"
+                        aria-label="Generated Password"
+                      ></textarea>
+                    </div>
+                    <div class="card-footer">
+                      <button onclick="blinkFunction()" id="generate" class="btn">Generate Password</button>
+                    </div>
+                  </div>
+                </div>
+        
+  <!--include a footer and my stamp-->
+  <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container d-flex justify-content-center">
+        <span class="text-muted">Created by SSJONES</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</html>
