@@ -22,21 +22,43 @@ var upperCasedCharacters = [
   "U", "V", "W", "X", "Y", "Z"
 ];
 
-// Assignment Code
+// use querySelector to grab my button BY the generate id
 var generateBtn = document.querySelector("#generate");
+//use an event listener to 
+generateBtn.addEventListener("click", writePassword);
+//prevent the default event REFRESH when the click happens
+event.preventDefault
 
-function blinkfunc {
-var result = str.blink();
-  document.getElementById("demo").innerHTML = result;
-}
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
+  //write password input to passwrod
   passwordText.value = password;
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   copyBtn.removeAttribute("disabled");
   copyBtn.focus();
 }
@@ -46,6 +68,6 @@ function copyToClipboard() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
 
 // BONUS EVENT LISTENER
