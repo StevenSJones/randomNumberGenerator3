@@ -23,6 +23,27 @@
             <div class="card">
                     <div class="card-header">
                       <h2>Generate a Password</h2>
+                      <section><!--create a section that takes user input for min, max, how many results and no repeat-->
+                        <div class="group">
+                            <label for="minimum">Minimum Number of Characters</label>
+                            <input type="number" step="1" id="minimum"/>
+                        </div>
+                        <div class="group">
+                            <label for="maximum">Maximum Number of Character</label>
+                            <input type="number" step="1" id="maximum"/>
+                        </div>
+                        <div class="group">
+                            <label for="resultcount">How Many Results?</label>
+                            <input type="number" min="1" step="1" id="resultcount" placeholder="1"/>
+                        </div>
+                        <div class="boxgroup">
+                            <input type="checkbox" id="norepeat"/>
+                            <label for="norepeat">Do Not Repeat Results?</label>
+                        </div>
+                        <div class="card-footer">
+                          <button id="generate" class="btn">Generate Password</button>
+                        </div>
+                    </section>
                     </div>
                     <div class="card-body">
                       <textarea
@@ -30,9 +51,6 @@
                         id="password"
                         aria-label="Generated Password"
                       ></textarea>
-                    </div>
-                    <div class="card-footer">
-                      <button onclick="blinkFunction()" id="generate" class="btn">Generate Password</button>
                     </div>
                   </div>
                 </div>
