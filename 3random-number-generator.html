@@ -15,7 +15,7 @@
     <div>
       <header>
           <!--jumbotron for the top container dispaying header that is emboldened-->
-      <div class="jumbotron jumbotron-fluid"; class = "wrapper">
+    <div class="jumbotron jumbotron-fluid"; class = "wrapper">
             <header>
           <!--using style attribute to embolden the header-->
         <h1 class="bright-header" style="font-size:60px";>The Random Password Generator</h1>
@@ -23,7 +23,7 @@
             <div class="card">
                     <div class="card-header">
                       <h2>Generate a Password</h2>
-                      <section><!--create a section that takes user input for min, max, how many results and no repeat-->
+                      <section><!--create a section that takes user input for min, max, how many passwords and no repeat-->
                         <div class="group">
                             <label for="minimum">Minimum Number of Characters</label>
                             <input type="number" step="1" id="minimum"/>
@@ -33,13 +33,21 @@
                             <input type="number" step="1" id="maximum"/>
                         </div>
                         <div class="group">
-                            <label for="resultcount">How Many Results?</label>
-                            <input type="number" min="1" step="1" id="resultcount" placeholder="1"/>
+                            <label for="passwordcount">How Many Results?</label>
+                            <input type="number" min="1" step="1" id="passwordcount" placeholder="1"/>
                         </div>
                         <div class="boxgroup">
                             <input type="checkbox" id="norepeat"/>
-                            <label for="norepeat">Do Not Repeat Results?</label>
+                            <label for="norepeat">No Repeat?</label>
                         </div>
+                        <div class="boxgroup">
+                          <input type="checkbox" id="specialCharacters"/>
+                          <label for="specialCharacters">Special Characters?</label>
+                      </div>
+                      <div class="boxgroup">
+                        <input type="checkbox" id="numericCharacters"/>
+                        <label for="norepeat">Numeric Characters?</label>
+                    </div>
                         <div class="card-footer">
                           <button id="generate" class="btn">Generate Password</button>
                         </div>
