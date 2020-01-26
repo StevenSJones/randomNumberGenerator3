@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--link to bootstrap-->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>The Random Password Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--link to bootstrap-->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>The Random Password Generator</title>
 </head>
-<link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-            
-    <div>
-      <header>
-          <!--jumbotron for the top container dispaying header that is emboldened-->
-    <div class="jumbotron jumbotron-fluid"; class = "wrapper">
-            <header>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div>
+    <header>
+      <!--jumbotron for the top container dispaying header that is emboldened-->
+      <div class="jumbotron jumbotron-fluid" ; class="wrapper">
+        <header>
           <!--using style attribute to embolden the header-->
-        <h1 class="bright-header" style="font-size:60px";>The Random Password Generator</h1>
-            </header>
-            <div class="card">
-                    <div class="card-header">
-                      <h2>Generate a Password</h2>
-                      <section><!--create a section that takes user input for min, max, how many passwords and no repeat-->
-                        <div class="group">
-                            <label for="minimum">Minimum Number of Characters</label>
-                            <input type="number" step="1" id="minimum"/>
-                        </div>
-                        <div class="group">
-                            <label for="maximum">Maximum Number of Character</label>
-                            <input type="number" step="1" id="maximum"/>
-                        </div>
-                        <div class="group">
-                            <label for="passwordcount">How Many Results?</label>
-                            <input type="number" min="1" step="1" id="passwordcount" placeholder="1"/>
-                        </div>
-                        <div class="boxgroup">
-                            <input type="checkbox" id="norepeat"/>
-                            <label for="norepeat">No Repeat?</label>
-                        </div>
-                        <div class="boxgroup">
-                          <input type="checkbox" id="specialCharacters"/>
-                          <label for="specialCharacters">Special Characters?</label>
-                      </div>
-                      <div class="boxgroup">
-                        <input type="checkbox" id="numericCharacters"/>
-                        <label for="norepeat">Numeric Characters?</label>
-                    </div>
-                        <div class="card-footer">
-                          <button id="generate" class="btn">Generate Password</button>
-                        </div>
-                    </section>
-                    </div>
-                    <div class="card-body">
-                      <textarea
-                        readonly
-                        id="password"
-                        aria-label="Generated Password"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-        
-  <!--include a footer and my stamp-->
-  <footer class="footer mt-auto py-3 bg-dark">
-        <div class="container d-flex justify-content-center">
-        <span class="text-muted">Created by SSJONES</span>
+          <h1 class="bright-header" style="font-size:60px" ;>The Random Password Generator</h1>
+        </header>
+        <div class="card">
+          <div class="card-header">
+            <h2>Generate a Password</h2>
+            <section>
+              <!--create a section that takes user input for min, max, how many passwords and no repeat-->
+              <div class="group">
+                <label for="minimum">Number of Characters</label>
+                <input type="number" step="1" id="numOfChar" />
+              </div>
+              <div class="boxgroup">
+                <input type="checkbox" id="upperCase" />
+                <label for="norepeat">upper Case Letters </label>
+              </div>
+              <div class="boxgroup">
+                <input type="checkbox" id="lowerCase" />
+                <label for="norepeat">lower Case Letters </label>
+              </div>
+              <div class="boxgroup">
+                <input type="checkbox" id="specChar" />
+                <label for="specialCharacters">Special Characters?</label>
+              </div>
+              <div class="boxgroup">
+                <input type="checkbox" id="numbers" />
+                <label for="norepeat">numbers</label>
+              </div>
+              <div class="card-footer">
+                <button id="generate" class="btn">Generate Password</button>
+              </div>
+            </section>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>
       </div>
-    </footer>
-    <script src="script.js"></script>
+
+      <!--include a footer and my stamp-->
+      <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container d-flex justify-content-center">
+          <span class="text-muted">Created by SSJONES</span>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+
 </html>
+
+

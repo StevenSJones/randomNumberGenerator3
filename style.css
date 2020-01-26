@@ -16,18 +16,17 @@ body {
   font-family: sans-serif;
   background-color:  rgb(233, 203, 34);
 }
-
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
+}
+
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .card {
@@ -82,13 +81,6 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
-  /*hover: (background: #a7a8aa;
-    transform: scale(1.1));
-
-&:focus {
-    outline: none;
-    background: $yellow;
-    color: $darkGray;*/
 }
 
 button[disabled] {
@@ -160,9 +152,9 @@ button[disabled] {
   font-size: 36px;
   text-align: left;
   margin-top: .5em;
-  /*.error {
+  .error {
       color: red;
       font-size: 40%;
       line-height: .4em;
-      animate: bounce .5s ease-in-out forward;*/
+      animate: bounce .5s ease-in-out forward;
   }
